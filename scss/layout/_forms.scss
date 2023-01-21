@@ -15,7 +15,7 @@
                 }
 }
 
-.form__input{
+.form__input-border{
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
@@ -23,31 +23,53 @@
 
 }
 
-.form__input:focus {
+.form__input-border:focus {
     fill: rgba(33, 150, 243, 1);
 }
 
 .form__field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+
+
+.form__label {
+    
+    display: block;
+    color: rgba(117, 117, 117, 1);
+    font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+        
+
+}
+
+.form__input {
+        font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+    display: block;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 42px;
+    padding: 11px 12px 11px 42px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: border;
-    cursor: pointer;
     outline: none;
-}
+    cursor: pointer;
+    
+    
+        &:focus {
+        outline: 1px solid rgba(33, 150, 243, 1);
+    }
 
-.form__field:focus {
-    border: 1px solid rgba(33, 150, 243, 1);
-}
-
-.form__label {
-    margin-top: 0;
-        margin-left: 0;
-        margin-bottom: 4px;
 }
 
 .form__textarea {
@@ -61,17 +83,24 @@
     transition-property: border;
     outline: none;
     cursor: pointer;
-        font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.01em;
-        
-            color: rgba(117, 117, 117, 0.5);
+    
+
+        &:focus {
+        border: 1px solid rgba(33, 150, 243, 1);
+    }
 }
 
-.form__textarea:focus {
-    border: 1px solid rgba(33, 150, 243, 1);
+.form__textarea::placeholder {
+    font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: rgba(117, 117, 117, 0.5);
 }
+
+
 
 .form-field__email {
     font-weight: 400;
@@ -85,3 +114,19 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+.icon__input {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    fill: rgba(33, 33, 33, 1);
+
+    pointer-events: none;
+
+    transition: fill $duration $timing-function;
+
+&:focus {
+fill: rgba(33, 150, 243, 1);
+}
+}

@@ -31,7 +31,9 @@
     left: 15px;
     display: inline-block;
     cursor: pointer;
-   
+    width: 16px;
+        height: 15px;
+        fill: rgba(33, 33, 33, 1);
 
     &__input {
             transition-duration: 250ms;
@@ -45,8 +47,27 @@
 }
 
 .icon-checkbox-hover {
-    opacity: 0;
-}
+        margin-right: 7px;
+
+    background-color: rgba(33, 150, 243, 1);
+        border-radius: 2px;
+
+        transition: background-color $duration $timing-function;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .checkbox:checked+&,
+        .checkbox:checked:focus+& {
+            background-color: rgba(33, 150, 243, 1);
+            border: none;
+        }
+
+        .checkbox:focus+& {
+            outline: 2px solid rgba(33, 150, 243, 1);
+        }
+    }
 
 .icon-checkbox {
     width: 16px;
@@ -58,37 +79,28 @@
 }
 
 .checkbox {
-    border: none;
-    opacity: 1;
+appearance: none;
+    position: absolute;
 }
 
 .for-consent {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+
     color: rgba(117, 117, 117, 1);
 }
 
 .link-consent {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+
     color: rgba(33, 150, 243, 1);
-    text-decoration: underline;
+   
 }
 
-.form__input {
-    width: 16px;
-    height: 15px;
-    color: rgba(33, 33, 33, 1);
-}
+
 
 .label {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .header-link-icon {
