@@ -49,10 +49,10 @@
 .icon-checkbox-hover {
         margin-right: 7px;
 
-    background-color: rgba(33, 150, 243, 1);
+        background-color: rgba(33, 150, 243, 1);
         border-radius: 2px;
 
-        transition: background-color $duration $timing-function;
+        transition: background-color border-radius: 2px;
 
         &:hover {
             cursor: pointer;
