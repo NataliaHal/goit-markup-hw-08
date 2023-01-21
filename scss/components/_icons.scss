@@ -36,6 +36,8 @@
         fill: rgba(33, 33, 33, 1);
 
     &__input {
+
+        
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-property: fill;
@@ -52,7 +54,8 @@
         background-color: rgba(33, 150, 243, 1);
         border-radius: 2px;
 
-        transition: background-color border-radius: 2px;
+        transition: background-color;
+        border-radius: 2px;
 
         &:hover {
             cursor: pointer;

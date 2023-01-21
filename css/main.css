@@ -258,6 +258,10 @@ a {
 .icon-checkbox-hover {
   margin-right: 7px;
   background-color: rgb(33, 150, 243);
+  border-radius: 2px;
+  -webkit-transition: background-color;
+  transition: background-color;
+  border-radius: 2px;
 }
 .icon-checkbox-hover:hover {
   cursor: pointer;
