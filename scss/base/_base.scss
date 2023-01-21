@@ -1,0 +1,29 @@
+element.style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--primary-white-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
