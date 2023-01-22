@@ -244,7 +244,7 @@ a {
 
 .icon-checkbox-hover {
   margin-right: 7px;
-  background-color: rgb(33, 150, 243);
+  border: 1.75px solid rgb(33, 150, 243);
   border-radius: 2px;
   -webkit-transition: background-color;
   transition: background-color;
