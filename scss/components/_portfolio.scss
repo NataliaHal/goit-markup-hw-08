@@ -48,6 +48,8 @@ img {
     flex-wrap: wrap;
     margin-bottom: 30px;
     list-style: none;
+    justify-content: center;
+    
 
     @media screen and (min-width: 768px) {
         margin-left: auto;
@@ -90,6 +92,7 @@ img {
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
+
 
 .portfolio__item {
     max-width: 450px;
