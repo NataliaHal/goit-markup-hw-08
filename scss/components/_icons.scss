@@ -1,102 +1,37 @@
-.modal__close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    width: 30px;
-    height: 30px;
+.icon {
+    @include centeredFlex(flex);
+    @extend %list;
+    margin-top: 16px;
+    gap: 10px;
 }
 
-.close {
-    fill: rgba(0, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+.icon__list {
+    list-style: none;
+}
 
-    cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
+.icon__link {
+    @include centeredFlex(flex);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms $transition-values;
 
     &:hover,
-        &:focus {
-            fill: rgba(33, 150, 243, 1);
-        }
-}
-
-.icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    display: inline-block;
-    cursor: pointer;
-    width: 16px;
-        height: 15px;
-
-
-}
-
-.icon-checkbox-hover {
-        margin-right: 7px;
-
-        border: 1.75px solid rgba(33, 150, 243, 1);
-        border-radius: 2px;
-
-        transition: background-color;
-        border-radius: 2px;
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        .checkbox:checked+&,
-        .checkbox:checked:focus+& {
-            background-color: rgba(33, 150, 243, 1);
-            border: none;
-        }
-
-        .checkbox:focus+& {
-            outline: 2px solid rgba(33, 150, 243, 1);
-        }
+    &:focus {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: $primary-accent-color;
     }
-
-.icon-checkbox {
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 3px;
-    margin-right: 7px;
-   
 }
 
-.checkbox {
-appearance: none;
-    position: absolute;
-}
+.icon__item {
+    margin: auto;
+    fill: $primary-icon-color;
+    transition: fill 250ms $transition-values;
 
-.for-consent {
-
-    color: rgba(117, 117, 117, 1);
-}
-
-.link-consent {
-
-    color: rgba(33, 150, 243, 1);
-   
-}
-
-.label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.header-link-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 32px 0;
+    .icon__link:hover &,
+    .icon__link:focus & {
+        fill: $primary-white-color;
+    }
 }
