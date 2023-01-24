@@ -246,9 +246,6 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .features__item {
     max-width: 354px;
@@ -1446,6 +1443,14 @@ img {
     gap: 30px;
   }
 }
+@media screen and (min-width: 480px) {
+  .portfolio__list {
+    margin-bottom: 30px;
+  }
+  .portfolio__list:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .portfolio__link {
   /* display: block; */
@@ -1486,7 +1491,6 @@ img {
   .portfolio__item {
     max-width: 450px;
     width: 100%;
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
