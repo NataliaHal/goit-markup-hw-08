@@ -1594,6 +1594,7 @@ img {
       flex-wrap: wrap;
   margin-bottom: 30px;
   list-style: none;
+  
 }
 @media screen and (min-width: 768px) {
   .portfolio__filter {
