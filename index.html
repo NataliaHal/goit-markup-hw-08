@@ -62,10 +62,11 @@
   <main>
 
     <section class="hero">
+      <div class="container">
 
       <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
       <button class="hero__btn" data-modal-open>Замовити послугу</button>
-
+      </div>
     </section>
 
     <section class="section features">
@@ -131,7 +132,6 @@
               <img            
                 srcset="
                   ./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
-                sizes="(min-width:1200px), (min-width:768px), (max-width:767px)" 
                 src="./images/work1.jpg" alt="Чоловічі кісті рук пишуть на клавіатурі програмний код, який відображається на екрані планшету та компм`ютера." />
               <div class="work__thumb">
                 <h3 class="work__label">Десктопні додатки</h3>
@@ -143,7 +143,6 @@
               <img   
                 srcset="
                    ./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
-                sizes="(min-width:1200px), (min-width:768px), (max-width:767px)" 
                 src="./images/work2.jpg" alt="Жіночі руки пишуть програмний код на ноутбуці, на екрані ноутбука три зображення екранів мобільного телефону із різни зображенням шаблонів розмітки." />
               <div class="work__thumb">
                 <h3 class="work__label">Мобільні додатки</h3>
@@ -155,7 +154,6 @@
               <img
                   srcset="
                   ./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
-                sizes="(min-width:1200px), (min-width:768px), (max-width:767px)" 
                 src="./images/work3.jpg" alt="Планшет на якому малюють людські руки шестикутник, який складається із маленьких різнокольорових шестикутників." />
               <div class="work__thumb">
                 <h3 class="work__label">Дизайнерські рішення</h3>
@@ -219,11 +217,14 @@
           </li>
           <li class="team__item">
             <img 
-            srcset="
-                  ./images/user2desktop.jpg 1x, ./images/user2desktop@2x.jpg 2x,
-                  ./images/user2tablet.jpg 1x, ./images/user2tablet@2x.jpg 2x,
-                  ./images/user2mobile.jpg 1x, ./images/user2mobile@2x.jpg 2x"
-                 sizes="(min-width:1200px), (min-width:768px), (max-width:767px)"
+                srcset="
+                  ./images/user2desktop.jpg    270w,
+                  ./images/user2tablet.jpg     354w,
+                  ./images/user2mobile.jpg     450w,
+                  ./images/user2desktop@2x.jpg 540w,
+                  ./images/user2tablet@2x.jpg  708w,
+                  ./images/user2mobile@2x.jpg  900w"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 100vw"
               src="./images/user2desktop.jpg" alt="Ольга Рєпіна" max-width="270" />
             <div class="team__member-block">
               <h3 class="team__member">Ольга Рєпіна</h3>
@@ -262,11 +263,14 @@
           </li>
           <li class="team__item">
             <img
-                srcset="
-                  ./images/user3desktop.jpg 1x, ./images/user3desktop@2x.jpg 2x,
-                  ./images/user3tablet.jpg 1x, ./images/user3tablet@2x.jpg 2x,
-                  ./images/user3mobile.jpg 1x, ./images/user3mobile@2x.jpg 2x"
-                sizes="(min-width:1200px), (min-width:768px), (max-width:767px)"
+                 srcset="
+                  ./images/user3desktop.jpg    270w,
+                  ./images/user3tablet.jpg     354w,
+                  ./images/user3mobile.jpg     450w,
+                  ./images/user3desktop@2x.jpg 540w,
+                  ./images/user3tablet@2x.jpg  708w,
+                  ./images/user3mobile@2x.jpg  900w"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 100vw"
               src="./images/user3desktop.jpg" alt="Микола Тарасов" max-width="270" />
             <div class="team__member-block">
               <h3 class="team__member">Микола Тарасов</h3>
@@ -305,11 +309,14 @@
           </li>
           <li class="team__item">
             <img
-                srcset="
-                  ./images/user4desktop.jpg 1x, ./images/user4desktop@2x.jpg 2x,
-                  ./images/user4tablet.jpg 1x, ./images/user4tablet@2x.jpg 2x,
-                  ./images/user4mobile.jpg 1x, ./images/user4mobile@2x.jpg 2x"
-                sizes="(min-width:1200px), (min-width:768px), (max-width:767px)"
+                 srcset="
+                  ./images/user4desktop.jpg    270w,
+                  ./images/user4tablet.jpg     354w,
+                  ./images/user4mobile.jpg     450w,
+                  ./images/user4desktop@2x.jpg 540w,
+                  ./images/user4tablet@2x.jpg  708w,
+                  ./images/user4mobile@2x.jpg  900w"
+                 sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 100vw"
               src="./images/user4desktop.jpg" alt="Михайло Єрмаков" max-width="270" />
             <div class="team__member-block">
               <h3 class="team__member">Михайло Єрмаков</h3>
